@@ -1,4 +1,5 @@
 import styles from './App.module.css';
+import { Link } from 'react-router-dom';
 import Button from './Component/Button';
 
 function App() {
@@ -11,20 +12,20 @@ function App() {
           justifyContent: 'space-between',
         }}
       >
-        <a href="#" className={styles.link}>
+        <Link to="#" className={styles.Link}>
           TOKO SINAR
-        </a>
+        </Link>
 
         <div className="">
-          <a href="#" className={styles.link}>
+          <Link to="/Menu" className={styles.Link}>
             Menu
-          </a>
-          <a href="#" className={styles.link}>
+          </Link>
+          <Link to="/AboutUs" className={styles.Link}>
             About Me
-          </a>
-          <a href="#" className={styles.link}>
+          </Link>
+          <Link to="/Order" className={styles.Link}>
             Contact Me
-          </a>
+          </Link>
         </div>
       </nav>
       <h1 className="text-2xl hover:font-bold hover:pointer">Praktikum A2 Pagi</h1>
